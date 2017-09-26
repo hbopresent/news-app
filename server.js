@@ -10,7 +10,7 @@ app.get("/", function(req, res) {
   res.sendfile("index.html");
 });
 // server port
-http.listen("56565", function() {
+http.listen("58888", function() {
   console.log("Welcome Franklin News!!");
 });
 // open socket

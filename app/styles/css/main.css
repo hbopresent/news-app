@@ -1,7 +1,12 @@
 html,
 body {
   width: 100vw;
-  overflow: hidden;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
 }
 .franklinNews {
   width: 100%;
@@ -85,3 +90,105 @@ body {
   height: 100%;
   display: flex;
 }
+.headline-carousel-list {
+
+}
+.categoryNews {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.categoryNews-title {
+
+}
+.categoryNews-text {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200px 200px 200px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+
+  /* big screen size */
+  /*grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 200px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+  align-content: center;*/
+}
+/* business news */
+.businessNews {
+
+}
+/* /business news */
+
+
+
+
+/* news bottom */
+.news-bottom {
+  width: 100%;
+  background-color: hsl(0, 0%, 93%);
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.news-bottom-footer {
+  width: 100%;
+}
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.footer-nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-nav-list {
+  font-size: 1rem;
+}
+.footer-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-search-bar {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000;
+}
+.footer-info {
+  width: 100%;
+  margin-top: 30px;
+}
+.footer-info-copyright {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+}
+.footer-info-links {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-info-link {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #000;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.footer-info-link:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* /news bottom */
