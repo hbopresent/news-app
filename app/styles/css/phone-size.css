@@ -1,0 +1,16 @@
+/* 0px ~ 554px */
+@media only screen and (max-width: 554px) {
+  .news-top {
+    width: 100%;
+  }
+  .headline-carousel {
+    height: 350px;
+  }
+  .categoryNews-text {
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 200px 200px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+  }
+}

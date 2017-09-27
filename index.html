@@ -6,9 +6,29 @@
     <title>FRANKLIN News</title>
     <link rel="stylesheet" href="app/styles/css/normalize.css"/>
     <link rel="stylesheet" href="app/styles/css/main.css"/>
+    <link rel="stylesheet" href="app/styles/css/phone-size.css"/>
+    <link rel="stylesheet" href="app/styles/css/tablet-size.css"/>
+    <link rel="stylesheet" href="app/styles/css/desktop-size.css"/>
+    <link rel="stylesheet" href="app/styles/css/bigscreen-size.css"/>
   </head>
   <body>
     <div class="franklinNews">
+      <!-- nav in mobile mode -->
+      <div class="nav-mobile">
+        <div class="nav-mobile-content">
+          <ul class="nav-mobile-lists">
+            <li class="nav-mobile-list">Home</li>
+            <li class="nav-mobile-list">Business</li>
+            <li class="nav-mobile-list">Technology</li>
+            <li class="nav-mobile-list">Real Estate</li>
+          </ul>
+          <ul class="nav-mobile-media-links">
+            <li class="nav-mobile-media">facebook</li>
+            <li class="nav-mobile-media">twitter</li>
+            <li class="nav-mobile-media">instagram</li>
+          </ul>
+        </div>
+      </div>
       <!-- site top -->
       <section class="news-top">
         <header class="news-top-header">
@@ -21,6 +41,14 @@
               <span class="navBtn-bar secondbar"></span>
             </div>
           </div>
+          <div class="header-nav-desktop" style="display:none">
+            <ul>
+              <li class="header-nav-list" style="border-bottom:1px solid #000">Home</li>
+              <li class="header-nav-list">Business</li>
+              <li class="header-nav-list">Technology</li>
+              <li class="header-nav-list">Real Estate</li>
+            </ul>
+          </div>
         </header>
       </section>
       <!-- site view -->
@@ -32,6 +60,13 @@
               <li class="headline-carousel-list business-headline"></li>
               <li class="headline-carousel-list tech-headline"></li>
               <li class="headline-carousel-list realEstate-headline"></li>
+            </ul>
+          </div>
+          <div class="headline-progress">
+            <ul>
+              <li class="headline-progress-list"></li>
+              <li class="headline-progress-list"></li>
+              <li class="headline-progress-list"></li>
             </ul>
           </div>
         </div>
@@ -66,7 +101,7 @@
       <!-- site bottom -->
       <footer class="news-bottom">
         <div class="news-bottom-footer">
-          <div class="footer-logo">FRANKLIN</div>
+          <div class="footer-logo">FRANKLIN News</div>
           <div class="footer-nav">
             <ul>
               <li class="footer-nav-list">Business</li>
@@ -79,8 +114,8 @@
             <div class="footer-search-icon"></div>
           </div>
           <div class="footer-info">
-            <div class="footer-info-copyright">Copyright © 2017 Franklin News Inc. All rights reserved.</div>
-            <div class="footer-info-links">
+            <div class="footer-info-item footer-info-copyright">Copyright © 2017 Franklin News Inc. All rights reserved.</div>
+            <div class="footer-info-item footer-info-links">
               <a class="footer-info-link">Privacy Policy</a>
               <a class="footer-info-link">Terms of Use</a>
               <a class="footer-info-link">Leagal</a>

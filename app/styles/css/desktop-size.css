@@ -1,0 +1,37 @@
+/* 921px ~ 1200px */
+@media only screen and (min-width: 921px) and (max-width: 1200px) {
+  .news-top {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-nav-list {
+    font-size: 1rem;
+    margin-left: 40px;
+    margin-right: 0px;
+  }
+  .headline-carousel {
+    width: 80%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .categoryNews-text {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 200px;
+    grid-row-gap: 20px;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .footer-nav {
+    width: 50%;
+    margin-top: 100px;
+  }
+  .footer-logo {
+    font-size: 2.25rem;
+  }
+  .footer-nav-list {
+    font-size: 1.5rem;
+  }
+}
