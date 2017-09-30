@@ -2,27 +2,41 @@
 @media only screen and (min-width: 921px) and (max-width: 1200px) {
   .news-top {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .news-headline-title {
+    width: 500px;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   .header-nav-list {
     font-size: 1rem;
     margin-left: 40px;
     margin-right: 0px;
   }
+  .headline {
+    margin-bottom: 200px;
+  }
   .headline-carousel {
     width: 80%;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .categoryNews {
+    margin-bottom: 200px;
+  }
+  .categoryNews-title {
+    font-size: 3rem;
   }
   .categoryNews-text {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 200px;
-    grid-row-gap: 20px;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 70px;
     justify-content: space-between;
     align-content: center;
+  }
+  .categoryNews-moreArticles {
+    width: 40%;
+    margin-top: 100px;
   }
   .footer-nav {
     width: 50%;
@@ -33,5 +47,34 @@
   }
   .footer-nav-list {
     font-size: 1.5rem;
+  }
+
+  /****************************************
+  * article about news detail
+  * class =>
+  *          news-article-detail-page
+  *          articlepage
+  *          articlepage-element
+  *          articlepage-title
+  *          articlepage-time
+  *          articlepage-author
+  *          articlepage-pic
+  *          articlepage-text-paragraph
+  *
+  *****************************************/
+  .news-article-detail-page {
+    width: 80%;
+  }
+  .articlepage-pic {
+    height: 400px;
+  }
+  .articlepage-text-paragraph {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .relatedNews-links,
+  .articlepage-time,
+  .articlepage-author {
+    font-size: 1.2rem;
   }
 }

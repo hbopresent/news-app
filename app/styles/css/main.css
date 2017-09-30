@@ -11,6 +11,29 @@ ul {
 li {
   list-style: none;
 }
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/**********************************  common class  ********************************/
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-image-setting {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/**********************************  /common class  ********************************/
+
 .franklinNews {
   width: 100%;
 }
@@ -21,29 +44,25 @@ li {
 }*/
 .news-top-header {
   width: 100%;
-  height: 50px;
-  display: flex;
+  height: 70px;
   justify-content: flex-start;
-  align-items: center;
   position: relative;
 }
 .header-logo {
-  width: 100px;
+  width: 135px;
   height: 100%;
   background-color: #000;
   color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   font-size: 1.5rem;
+  padding-bottom: 5px;
 }
 .header-pageTitle {
   width: 100px;
   height: 100%;
   font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
 }
 .header-searchBtn {
   width: 40px;
@@ -51,41 +70,42 @@ li {
   position: absolute;
   right:50px;
 }
-.header-nav {
+.header-nav-mobile {
+  display: none;
   width: 40px;
   height: 40px;
   position: absolute;
   right: 20px;
+  top: 15px;
+  z-index: 10;
 }
 .navBtn {
   width: 100%;
   height: 100%;
   position: relative;
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
 }
 .navBtn-bar {
   width: 90%;
   height: 10%;
   background-color: #000;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 .header-nav-desktop {
   height: 100%;
   position: absolute;
-  right: 0px;
+  right: 30px;
+  align-items: flex-end;
 }
 .header-nav-desktop ul {
   width: 100%;
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
+  margin: 0;
 }
 .header-nav-list {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-size: 0.8rem;
   padding-bottom: 5px;
 }
@@ -94,10 +114,11 @@ li {
   height: 100vh;
   background-color: #FFF;
   position: fixed;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  left: 0%;
+  top: 0%;
+  z-index: -10;
+  opacity: 0;
+  transition: opacity 0.2s linear;
 }
 .nav-mobile-content {
   width: 100%;
@@ -105,10 +126,7 @@ li {
 }
 .nav-mobile-lists {
   width: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .nav-mobile-lists::after {
   content: "";
@@ -126,9 +144,6 @@ li {
 }
 .nav-mobile-media-links {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 60px;
 }
 .nav-mobile-media {
@@ -141,12 +156,12 @@ li {
 /* news view */
 .news-view {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
+  position: relative;
 }
 .headline {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin-bottom: 100px;
 }
 .headline-carousel {
   width: 100%;
@@ -155,44 +170,228 @@ li {
 .headline-carousel > ul {
   width: 100%;
   height: 100%;
-  display: flex;
+  position: relative;
 }
 .headline-carousel-list {
-
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  opacity: 0;
+}
+.selected-carouselpage {
+  opacity: 1;
+  z-index: 2;
+}
+.news-headline {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.news-headline-title {
+  position: absolute;
+  top: 8%;
+  left: 0%;
+  margin: 0;
+}
+.news-headline-title mark {
+  color: #FFF;
+  background-color: hsl(0, 100%, 50%);
+}
+.business-headline {
+  background-image: url(../img/headline-img/headline-business.png);
+}
+.tech-headline {
+  background-image: url(../img/headline-img/headline-tech.png);
+}
+.realEstate-headline {
+  background-image: url(../img/headline-img/headline-realestate.png);
 }
 .headline-progress {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 250px;
+  margin-top: 30px;
 }
 .headline-progress ul {
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.headline-progress-list {
-  width: 50px;
-  height: 2px;
-  background-color: #000;
-  border-radius: 10px;
+.headline-progress-list,
+.headline-progress-list-bar {
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 100px;
 }
 .categoryNews {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.categoryNews-title {
-
 }
 .categoryNews-text {
   width: 100%;
   display: grid;
 }
-/* business news */
-.businessNews {
-
+.categoryNews-text-article {
+  flex-direction: column;
 }
+.article-pic {
+  width: 100%;
+  height: 100%;
+}
+.article-title {
+  text-align: left;
+  margin-bottom: 0;
+}
+.businessNews-article1 {
+  background-image: url(../img/business-img/business1.png);
+}
+.businessNews-article2 {
+  background-image: url(../img/business-img/business2.png);
+}
+.businessNews-article3 {
+  background-image: url(../img/business-img/business3.png);
+}
+.businessNews-article4 {
+  background-image: url(../img/business-img/business4.png);
+}
+.businessNews-article5 {
+  background-image: url(../img/business-img/business5.png);
+}
+.businessNews-article6 {
+  background-image: url(../img/business-img/business6.png);
+}
+.techNews-article1 {
+  background-image: url(../img/technology-img/tech1.png);
+}
+.techNews-article2 {
+  background-image: url(../img/technology-img/tech2.png);
+}
+.techNews-article3 {
+  background-image: url(../img/technology-img/tech3.png);
+}
+.techNews-article4 {
+  background-image: url(../img/technology-img/tech4.png);
+}
+.techNews-article5 {
+  background-image: url(../img/technology-img/tech5.png);
+}
+.techNews-article6 {
+  background-image: url(../img/technology-img/tech6.png);
+}
+.realestateNews-article1 {
+  background-image: url(../img/realestate-img/realestate1.png);
+}
+.realestateNews-article2 {
+  background-image: url(../img/realestate-img/realestate2.png);
+}
+.realestateNews-article3 {
+  background-image: url(../img/realestate-img/realestate3.png);
+}
+.realestateNews-article4 {
+  background-image: url(../img/realestate-img/realestate4.png);
+}
+.realestateNews-article5 {
+  background-image: url(../img/realestate-img/realestate5.png);
+}
+.realestateNews-article6 {
+  background-image: url(../img/realestate-img/realestate6.png);
+}
+.categoryNews-moreArticles {
+  /*width: 100%;*/
+  height: 50px;
+  background-color: #000;
+  opacity: 0.9;
+  /*margin-top: 50px;*/
+}
+.more-text {
+  color: #FFF;
+  font-size: 0.8rem;
+}
+.more-guideArrow {}
+.news-article-detail {
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-color: #FFF;
+}
+.news-article-detail-page {
+  width: 90%;
+  position: relative;
+}
+.articlepage {
+  width: 100%;
+}
+.articlepage-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.articlepage-time,
+.articlepage-author {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.articlepage-element {
+  /*margin-bottom: 15px;*/
+}
+.articlepage-pic {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/business-img/business1.png);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.articlepage-text {
+  width: 100%;
+}
+.articlepage-text-paragraph {
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+}
+.relatedNews {
+  width: 100%;
+  margin-top: 100px;
+}
+.relatedNews-title {
+  color: #00bd00;
+}
+.relatedNews ul{
+  padding-left: 20px;
+}
+.relatedNews-links {
+  list-style: disc;
+  color: #00bd00;
+  padding-bottom: 10px;
+}
+.nextNews {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.nextBtn,
+.prevBtn {
+  display: none;
+  width: 60px;
+  height: 60px;
+  background-color: hsl(0, 0%, 90%);
+  background-size: 50% 50%;
+  border-radius: 100%;
+  position: absolute;
+  top: calc((100% - 60px) / 2);
+  cursor: pointer;
+}
+.nextBtn {
+  background-image: url(../img/icon/right-arrow.png);
+}
+.prevBtn {
+  background-image: url(../img/icon/left-arrow.png);
+}
+
+/* business news */
+.businessNews {}
 /* /business news */
 
 
@@ -202,7 +401,6 @@ li {
 .news-bottom {
   width: 100%;
   background-color: hsl(0, 0%, 95%);
-  margin-top: 200px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -211,22 +409,15 @@ li {
 }
 .footer-logo {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 2rem;
 }
 .footer-nav {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 50px;
 }
 .footer-nav ul {
   width: 100%;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 .footer-nav-list {
   font-size: 1rem;
@@ -234,16 +425,30 @@ li {
 }
 .footer-search {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 50px;
 }
-.footer-search-bar {
+.footer-searchbar {
   width: 300px;
   height: 30px;
   border: 1px solid #000;
   border-radius: 10px;
+}
+.footer-searchbar-text {
+  width: 255px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+.footer-searchbar-text:focus {
+  outline: none;
+}
+.footer-searchbar-icon {
+  width: 30px;
+  height: 100%;
+  background-size: 50% 50%;
+  background-image: url(../img/icon/search.png);
 }
 .footer-info {
   width: 100%;
@@ -251,20 +456,13 @@ li {
 }
 .footer-info-item {
   padding-bottom: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer-info-copyright {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 0.8rem;
 }
 .footer-info-links {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .footer-info-link {
   padding-right: 10px;

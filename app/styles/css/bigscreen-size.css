@@ -2,37 +2,49 @@
 @media only screen and (min-width: 1201px) {
   .news-top-header {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .header-nav-desktop {
+    right: 40px;
+  }
+  .header-nav-list {
+    font-size: 1rem;
+    margin-left: 40px;
+    margin-right: 0px;
   }
   .headline {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 250px;
+  }
+  .news-headline-title {
+    width: 500px;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   .headline-carousel {
     width: 80%;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .categoryNews {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 250px;
+  }
+  .categoryNews-title {
+    font-size: 3rem;
   }
   .categoryNews-text {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 200px;
-    grid-row-gap: 20px;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 70px;
     justify-content: space-between;
     align-content: center;
   }
+  .categoryNews-moreArticles {
+    width: 40%;
+    margin-top: 100px;
+  }
   .news-bottom-footer {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .footer-nav {
     width: 50%;
@@ -43,5 +55,56 @@
   }
   .footer-nav-list {
     font-size: 1.5rem;
+  }
+
+  /****************************************
+  * article about news detail
+  * class =>
+  *          news-article-detail-page
+  *          articlepage
+  *          articlepage-element
+  *          articlepage-title
+  *          articlepage-time
+  *          articlepage-author
+  *          articlepage-pic
+  *          articlepage-text-paragraph
+  *
+  *****************************************/
+  .news-article-detail-page {
+    width: 950px;
+  }
+  .articlepage-title {
+    font-size: 2.5rem;
+  }
+  .articlepage-pic {
+    height: 450px;
+  }
+  .articlepage-text-paragraph {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+  .relatedNews-links,
+  .articlepage-time,
+  .articlepage-author {
+    font-size: 1.5rem;
+  }
+
+  .nextBtn {
+    display: block;
+    right: -12%;
+  }
+  .prevBtn {
+    display: block;
+    left: -12%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .nextBtn {
+    display: block;
+    right: -20%;
+  }
+  .prevBtn {
+    display: block;
+    left: -20%;
   }
 }

@@ -14,38 +14,38 @@
   <body>
     <div class="franklinNews">
       <!-- nav in mobile mode -->
-      <div class="nav-mobile">
+      <div class="nav-mobile content-center" id="mobileNavPage">
         <div class="nav-mobile-content">
-          <ul class="nav-mobile-lists">
+          <ul class="nav-mobile-lists content-center">
             <li class="nav-mobile-list">Home</li>
             <li class="nav-mobile-list">Business</li>
-            <li class="nav-mobile-list">Technology</li>
+            <li class="nav-mobile-list">Tech</li>
             <li class="nav-mobile-list">Real Estate</li>
           </ul>
-          <ul class="nav-mobile-media-links">
-            <li class="nav-mobile-media">facebook</li>
-            <li class="nav-mobile-media">twitter</li>
-            <li class="nav-mobile-media">instagram</li>
+          <ul class="nav-mobile-media-links content-center">
+            <li class="nav-mobile-media"><a href="###">FACEBOOK</a></li>
+            <li class="nav-mobile-media"><a href="###">TWITTER</a></li>
+            <li class="nav-mobile-media"><a href="###">INSTAGRAM</a></li>
           </ul>
         </div>
       </div>
       <!-- site top -->
-      <section class="news-top">
-        <header class="news-top-header">
-          <div class="header-logo">Franklin</div>
-          <div class="header-pageTitle">HOME</div>
+      <section class="news-top block-center">
+        <header class="news-top-header block-center content-center">
+          <div class="header-logo content-center">FRANKLIN</div>
+          <div class="header-pageTitle content-center">HOME</div>
           <div class="header-searchBtn"></div>
-          <div class="header-nav">
-            <div class="navBtn">
+          <div class="header-nav-mobile" id="mobileNavBtn">
+            <div class="navBtn content-center" id="navBtn">
               <span class="navBtn-bar firstbar"></span>
               <span class="navBtn-bar secondbar"></span>
             </div>
           </div>
-          <div class="header-nav-desktop" style="display:none">
-            <ul>
-              <li class="header-nav-list" style="border-bottom:1px solid #000">Home</li>
+          <div class="header-nav-desktop content-center">
+            <ul class="content-center">
+              <li class="header-nav-list">Home</li>
               <li class="header-nav-list">Business</li>
-              <li class="header-nav-list">Technology</li>
+              <li class="header-nav-list">Tech</li>
               <li class="header-nav-list">Real Estate</li>
             </ul>
           </div>
@@ -53,69 +53,215 @@
       </section>
       <!-- site view -->
       <section class="news-view">
+        <!-- article news detail -->
+        <div class="news-article-detail" style="display:none">
+          <div class="news-article-detail-page block-center">
+            <article class="articlepage">
+              <h1 class="articlepage-element articlepage-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h1>
+              <div class="articlepage-element articlepage-time">SEPTEMBER 27, 2017 / 6:05 PM</div>
+              <div class="articlepage-element articlepage-author">By <strong>Lorem Ipsum</strong></div>
+              <div class="articlepage-element articlepage-pic background-image-setting"></div>
+              <div class="articlepage-element articlepage-text">
+                <p class="articlepage-text-paragraph">
+                  Contrary to popular belief, Lorem Ipsum is not simply random text.
+                  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words                  </p>
+                <p class="articlepage-text-paragraph">
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                  discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                  Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                </p>
+                <p class="articlepage-text-paragraph">
+                  This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                  The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+                <p class="articlepage-text-paragraph">
+                  Contrary to popular belief, Lorem Ipsum is not simply random text.
+                  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words                  </p>
+                <p class="articlepage-text-paragraph">
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                  discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                  Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                </p>
+                <p class="articlepage-text-paragraph">
+                  This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                  The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+              </div>
+            </article>
+            <div class="relatedNews">
+              <h2 class="relatedNews-title">Related Coverage</h2>
+              <ul>
+                <li class="relatedNews-links">
+                  <a href="###">Many desktop publishing packages and web page editors</a>
+                </li>
+                <li class="relatedNews-links">
+                    <a href="###">Many desktop publishing packages and web page editors</a>
+                </li>
+                <li class="relatedNews-links">
+                    <a href="###">Many desktop publishing packages and web page editors</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nextNews block-center content-center">next</div>
+            <div class="nextBtn background-image-setting"></div>
+            <div class="prevBtn background-image-setting"></div>
+          </div>
+        </div>
         <!-- headline daily -->
-        <div class="headline">
-          <div class="headline-carousel">
+        <div class="headline block-center">
+          <div class="headline-carousel block-center">
             <ul>
-              <li class="headline-carousel-list business-headline"></li>
-              <li class="headline-carousel-list tech-headline"></li>
-              <li class="headline-carousel-list realEstate-headline"></li>
+              <li class="headline-carousel-list selected-carouselpage">
+                <div class="news-headline business-headline background-image-setting">
+                  <h1 class="news-headline-title"><mark>There are many variations of passages of Lorem Ipsum available</mark></h1>
+                </div>
+              </li>
+              <li class="headline-carousel-list">
+                <div class=" news-headline tech-headline background-image-setting">
+                  <h1 class="news-headline-title"><mark>There are many variations of passages of Lorem Ipsum available</mark></h1>
+                </div>
+              </li>
+              <li class="headline-carousel-list realEstate-headline background-image-setting">
+                <div class="news-headline realEstate-headline">
+                  <h1 class="news-headline-title"><mark>There are many variations of passages of Lorem Ipsum available</mark></h1>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="headline-progress">
-            <ul>
-              <li class="headline-progress-list"></li>
-              <li class="headline-progress-list"></li>
-              <li class="headline-progress-list"></li>
+          <div class="headline-progress block-center">
+            <ul class="content-center">
+              <li class="headline-progress-list"><span class="headline-progress-list-bar"></span></li>
+              <li class="headline-progress-list"><span class="headline-progress-list-bar"></span></li>
+              <li class="headline-progress-list"><span class="headline-progress-list-bar"></span></li>
             </ul>
           </div>
         </div>
+
         <!-- Business News -->
-        <div class="businessNews categoryNews">
+        <div class="businessNews categoryNews block-center">
           <h2 class="categoryNews-title">Business</h2>
           <div class="categoryNews-text">
-            <div style="background-color:#000"></div>
-            <div style="background-color:#000"></div>
-            <div style="background-color:#000"></div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic businessNews-article1 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic businessNews-article2 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic businessNews-article3 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic businessNews-article4 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic businessNews-article5 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic businessNews-article6 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+          </div>
+          <div class="categoryNews-moreArticles block-center content-center">
+            <p class="more-text">more Business</p>
+            <div class="more-guideArrow"></div>
           </div>
         </div>
         <!-- Technology News -->
-        <div class="techNews categoryNews">
-          <h2 class="categoryNews-title">Technology</h2>
+        <div class="techNews categoryNews block-center">
+          <h2 class="categoryNews-title">Tech</h2>
           <div class="categoryNews-text">
-            <div style="background-color:#000"></div>
-            <div style="background-color:#000"></div>
-            <div style="background-color:#000"></div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic techNews-article1 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic techNews-article2 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic techNews-article3 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic techNews-article4 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic techNews-article5 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic techNews-article6 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+          </div>
+          <div class="categoryNews-moreArticles block-center content-center">
+            <p class="more-text">more Tech</p>
+            <div class="more-guideArrow"></div>
           </div>
         </div>
         <!-- Real Estate News -->
-        <div class="realEstateNews categoryNews">
+        <div class="realEstateNews categoryNews block-center">
           <h2 class="categoryNews-title">Real Estate</h2>
           <div class="categoryNews-text">
-            <div style="background-color:#000"></div>
-            <div style="background-color:#000"></div>
-            <div style="background-color:#000"></div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic realestateNews-article1 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic realestateNews-article2 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic realestateNews-article3 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic realestateNews-article4 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic realestateNews-article5 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+            <div class="categoryNews-text-article content-center">
+              <div class="article-pic realestateNews-article6 background-image-setting"></div>
+              <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
+            </div>
+          </div>
+          <div class="categoryNews-moreArticles block-center content-center">
+            <p class="more-text">more Real Estate</p>
+            <div class="more-guideArrow"></div>
           </div>
         </div>
       </section>
       <!-- site bottom -->
       <footer class="news-bottom">
-        <div class="news-bottom-footer">
-          <div class="footer-logo">FRANKLIN News</div>
-          <div class="footer-nav">
-            <ul>
+        <div class="news-bottom-footer block-center">
+          <div class="footer-logo content-center">FRANKLIN News</div>
+          <div class="footer-nav block-center">
+            <ul class="content-center">
               <li class="footer-nav-list">Business</li>
-              <li class="footer-nav-list">Technology</li>
+              <li class="footer-nav-list">Tech</li>
               <li class="footer-nav-list">Real Estate</li>
             </ul>
           </div>
-          <div class="footer-search">
-            <div class="footer-search-bar"></div>
-            <div class="footer-search-icon"></div>
+          <div class="footer-search content-center">
+            <div class="footer-searchbar content-center">
+              <input type="text" class="footer-searchbar-text"/>
+              <div class="footer-searchbar-icon background-image-setting"></div>
+            </div>
           </div>
           <div class="footer-info">
-            <div class="footer-info-item footer-info-copyright">Copyright © 2017 Franklin News Inc. All rights reserved.</div>
-            <div class="footer-info-item footer-info-links">
+            <div class="footer-info-item footer-info-copyright block-center content-center">Copyright © 2017 Franklin News Inc. All rights reserved.</div>
+            <div class="footer-info-item footer-info-links block-center content-center">
               <a class="footer-info-link">Privacy Policy</a>
               <a class="footer-info-link">Terms of Use</a>
               <a class="footer-info-link">Leagal</a>
@@ -125,5 +271,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="app/script/js/main.js"></script>
   </body>
 </html>
