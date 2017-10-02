@@ -17,10 +17,10 @@
       <div class="nav-mobile content-center" id="mobileNavPage">
         <div class="nav-mobile-content">
           <ul class="nav-mobile-lists content-center">
-            <li class="nav-mobile-list">Home</li>
-            <li class="nav-mobile-list">Business</li>
-            <li class="nav-mobile-list">Tech</li>
-            <li class="nav-mobile-list">Real Estate</li>
+            <li class="nav-mobile-list" id="navMobileHome">Home</li>
+            <li class="nav-mobile-list" id="navMobileBusiness">Business</li>
+            <li class="nav-mobile-list" id="navMobileTech">Tech</li>
+            <li class="nav-mobile-list" id="navMobileRealEstate">Real Estate</li>
           </ul>
           <ul class="nav-mobile-media-links content-center">
             <li class="nav-mobile-media"><a href="###">FACEBOOK</a></li>
@@ -33,7 +33,7 @@
       <section class="news-top block-center">
         <header class="news-top-header block-center content-center">
           <div class="header-logo content-center">FRANKLIN</div>
-          <div class="header-pageTitle content-center">HOME</div>
+          <div class="header-pageTitle content-center" id="pageTitle">HOME</div>
           <div class="header-searchBtn"></div>
           <div class="header-nav-mobile" id="mobileNavBtn">
             <div class="navBtn content-center" id="navBtn">
@@ -43,10 +43,10 @@
           </div>
           <div class="header-nav-desktop content-center">
             <ul class="content-center">
-              <li class="header-nav-list">Home</li>
-              <li class="header-nav-list">Business</li>
-              <li class="header-nav-list">Tech</li>
-              <li class="header-nav-list">Real Estate</li>
+              <li class="header-nav-list" id="navDesktopHome">Home</li>
+              <li class="header-nav-list" id="navDesktopBusiness">Business</li>
+              <li class="header-nav-list" id="navDesktopTech">Tech</li>
+              <li class="header-nav-list" id="navDesktopRealEstate">Real Estate</li>
             </ul>
           </div>
         </header>
@@ -110,21 +110,21 @@
           </div>
         </div>
         <!-- headline daily -->
-        <div class="headline block-center">
+        <div class="headline block-center" id="headline">
           <div class="headline-carousel block-center">
             <ul>
-              <li class="headline-carousel-list selected-carouselpage">
+              <li class="headline-carousel-list selected-carouselpage" id="first-headline-carousel-page">
                 <div class="news-headline business-headline background-image-setting">
                   <h1 class="news-headline-title"><mark>There are many variations of passages of Lorem Ipsum available</mark></h1>
                 </div>
               </li>
-              <li class="headline-carousel-list">
+              <li class="headline-carousel-list" id="second-headline-carousel-page">
                 <div class=" news-headline tech-headline background-image-setting">
                   <h1 class="news-headline-title"><mark>There are many variations of passages of Lorem Ipsum available</mark></h1>
                 </div>
               </li>
-              <li class="headline-carousel-list realEstate-headline background-image-setting">
-                <div class="news-headline realEstate-headline">
+              <li class="headline-carousel-list realEstate-headline background-image-setting" id="third-headline-carousel-page">
+                <div class="news-headline realEstate-headline background-image-setting">
                   <h1 class="news-headline-title"><mark>There are many variations of passages of Lorem Ipsum available</mark></h1>
                 </div>
               </li>
@@ -132,16 +132,16 @@
           </div>
           <div class="headline-progress block-center">
             <ul class="content-center">
-              <li class="headline-progress-list"><span class="headline-progress-list-bar"></span></li>
-              <li class="headline-progress-list"><span class="headline-progress-list-bar"></span></li>
-              <li class="headline-progress-list"><span class="headline-progress-list-bar"></span></li>
+              <li class="headline-progress-list"><span class="headline-progress-list-bar selected-progress" id="first-headline-progress"></span></li>
+              <li class="headline-progress-list"><span class="headline-progress-list-bar" id="second-headline-progress"></span></li>
+              <li class="headline-progress-list"><span class="headline-progress-list-bar" id="third-headline-progress"></span></li>
             </ul>
           </div>
         </div>
 
         <!-- Business News -->
-        <div class="businessNews categoryNews block-center">
-          <h2 class="categoryNews-title">Business</h2>
+        <div class="businessNews categoryNews block-center" id="businessNews">
+          <h2 class="categoryNews-title" id="businessTitle">Business</h2>
           <div class="categoryNews-text">
             <div class="categoryNews-text-article content-center">
               <div class="article-pic businessNews-article1 background-image-setting"></div>
@@ -168,14 +168,14 @@
               <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
             </div>
           </div>
-          <div class="categoryNews-moreArticles block-center content-center">
+          <div class="categoryNews-moreArticles block-center content-center" id="moreBusiness">
             <p class="more-text">more Business</p>
             <div class="more-guideArrow"></div>
           </div>
         </div>
         <!-- Technology News -->
-        <div class="techNews categoryNews block-center">
-          <h2 class="categoryNews-title">Tech</h2>
+        <div class="techNews categoryNews block-center" id="techNews">
+          <h2 class="categoryNews-title" id="techTitle">Tech</h2>
           <div class="categoryNews-text">
             <div class="categoryNews-text-article content-center">
               <div class="article-pic techNews-article1 background-image-setting"></div>
@@ -202,14 +202,14 @@
               <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
             </div>
           </div>
-          <div class="categoryNews-moreArticles block-center content-center">
+          <div class="categoryNews-moreArticles block-center content-center" id="moreTech">
             <p class="more-text">more Tech</p>
             <div class="more-guideArrow"></div>
           </div>
         </div>
         <!-- Real Estate News -->
-        <div class="realEstateNews categoryNews block-center">
-          <h2 class="categoryNews-title">Real Estate</h2>
+        <div class="realEstateNews categoryNews block-center" id="realEstateNews">
+          <h2 class="categoryNews-title" id="realestateTitle">Real Estate</h2>
           <div class="categoryNews-text">
             <div class="categoryNews-text-article content-center">
               <div class="article-pic realestateNews-article1 background-image-setting"></div>
@@ -236,7 +236,7 @@
               <h4 class="article-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
             </div>
           </div>
-          <div class="categoryNews-moreArticles block-center content-center">
+          <div class="categoryNews-moreArticles block-center content-center" id="moreRealEstate">
             <p class="more-text">more Real Estate</p>
             <div class="more-guideArrow"></div>
           </div>
@@ -248,9 +248,9 @@
           <div class="footer-logo content-center">FRANKLIN News</div>
           <div class="footer-nav block-center">
             <ul class="content-center">
-              <li class="footer-nav-list">Business</li>
-              <li class="footer-nav-list">Tech</li>
-              <li class="footer-nav-list">Real Estate</li>
+              <li class="footer-nav-list" id="navFooterBusiness">Business</li>
+              <li class="footer-nav-list" id="navFooterTech">Tech</li>
+              <li class="footer-nav-list" id="navFooterRealEstate">Real Estate</li>
             </ul>
           </div>
           <div class="footer-search content-center">
